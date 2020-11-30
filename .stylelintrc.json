@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-styled-components",
+    "stylelint-config-idiomatic-order"
+  ],
+  "plugins": [
+    "stylelint-order"
+  ],
+  "processors": [
+    "stylelint-processor-styled-components"
+  ],
+  "rules": {
+    "value-keyword-case": [
+      "lower",
+      {
+        "ignoreKeywords": [
+          "dummyValue"
+        ]
+      }
+    ]
+  }
+}
